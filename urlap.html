@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem ipsum</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    form fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+    form fieldset * {
+        max-width: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="logo-placeholder" aria-label="Logó helye"></div>
+
+    <nav aria-label="Fő navigáció">
+      <ul class="menu">
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="urlap.html">Űrlap</a></li>
+        <li><a href="#harmadik">Menüpont 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header class="hero" id="elso">
+      <h1>Lorem ipsum</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+        feugiat, augue sed luctus commodo, velit lorem gravida neque.
+      </p>
+    </header>
+
+    <section class="content-layout" id="masodik">
+      <article class="main-content">
+        <h2>Lorem ipsum</h2>
+
+        <form action="">
+            <fieldset>
+                <legend>Szállítási információk</legend>
+
+                <label for="nev">Vezetéknév & keresztnév</label>
+                <input type="text" id="nev" placeholder="Kis Ferenc">
+
+                <label for="cegnev">Cég neve</label>
+                <input type="text" id="cegnev" placeholder="Neo rendszerház">
+
+                <label for="elerhetoseg_email">Email</label>
+                <input type="email" id="elerhetoseg_email" placeholder="Csapat6@szamalk-holdings.com">
+
+                <label for="elerhetoseg_telefon">Telefonszám</label>
+                <input type="number" id="elerhetoseg_telefon" placeholder="+3630123456">
+            </fieldset>
+
+            <fieldset>
+                <legend>Több űrlapelem</legend>
+
+                <fieldset>
+                    <legend>radio</legend>
+                    <div>
+                        <label for="egyes">Egyes elem</label>
+                        <input type="radio" name="videoton" id="egyes">
+                    </div>
+                    <div>
+                        <label for="kettes">kettes elem</label>
+                        <input type="radio" name="videoton" id="kettes">
+                    </div>
+                    <div>
+                        <label for="harmas">harmas elem</label>
+                        <input type="radio" name="videoton" id="harmas">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>csheckbox</legend>
+                    <div>
+                        <label for="egyes">Egyes elem</label>
+                        <input type="checkbox" name="videoton" id="egyes">
+                    </div>
+                    <div>
+                        <label for="kettes">kettes elem</label>
+                        <input type="checkbox" name="videoton" id="kettes">
+                    </div>
+                    <div>
+                        <label for="harmas">harmas elem</label>
+                        <input type="checkbox" name="videoton" id="harmas">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>egyéb</legend>
+                    <label for="szinecske">Szín</label>
+                    <input type="color" name="" id="szinecske">
+
+                    <input type="range" name="" id="">
+                    <input type="date" name="" id="">
+                    <input type="file" name="" id="">
+                    <input type="reset" value="reset">
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+      </article>
+
+      <aside id="harmadik">
+        <h2>Lorem ipsum</h2>
+
+        <section class="aside-box">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+        <section class="aside-box">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+        <section class="aside-box">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Quisque vitae libero vel lorem tincidunt ullamcorper.</p>
+  </footer>
+</body>
+
+</html>
